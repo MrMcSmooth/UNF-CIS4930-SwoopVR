@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5945942309546106498
 Transform:
   m_ObjectHideFlags: 0
@@ -127,6 +127,54 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &8196573250450742455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6288242520226742723}
+  - component: {fileID: 4156676495944895166}
+  m_Layer: 0
+  m_Name: Battery
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6288242520226742723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196573250450742455}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0021, y: 0, z: 0.0021}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1429979409083465842}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4156676495944895166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196573250450742455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecfc5776d94d3c44bb567634eee995cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlashlightBattery
+  targetLight: {fileID: 5053432689834118206}
+  maxBatteryLife: 100
+  batteryLife: 50
+  batteryDrainRate: 5
 --- !u!1 &8853697952800531245
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +184,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3124234146416694391}
-  - component: {fileID: 1410219173766581161}
   m_Layer: 0
   m_Name: GrabPoint
   m_TagString: Untagged
@@ -152,40 +199,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8853697952800531245}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
   m_LocalPosition: {x: 0.0232, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1429979409083465842}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1410219173766581161
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8853697952800531245}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!1001 &1464505298423539609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -267,6 +287,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5945942309546106498}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6288242520226742723}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
       insertIndex: -1
@@ -280,6 +303,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8000672891519768471}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5207572045181446551}
     - targetCorrespondingSourceObject: {fileID: 1804508720191139184, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6076523025830595878}
@@ -291,7 +317,7 @@ PrefabInstance:
       addedObject: {fileID: 4690770363841840868}
     - targetCorrespondingSourceObject: {fileID: 1804508720191139184, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8376093992593545749}
+      addedObject: {fileID: 4814962029209674800}
   m_SourcePrefab: {fileID: 100100000, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
 --- !u!1 &961537012578388713 stripped
 GameObject:
@@ -366,8 +392,8 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: -0.02, y: 0.014, z: 0.008}
-  m_Center: {x: -0.005, y: -0.088, z: 0}
---- !u!59 &8376093992593545749
+  m_Center: {x: -0.01, y: -0.088, z: 0}
+--- !u!59 &4814962029209674800
 HingeJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -546,7 +572,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 1
   m_PredictedVisualsTransform: {fileID: 0}
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -607,3 +633,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   flashlightLight: {fileID: 5053432689834118206}
+--- !u!114 &5207572045181446551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770932932861188808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8167a1fee6e76fe49b083d5adbac679d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LightSwitch
+  targetLight: {fileID: 5053432689834118206}
+  battery: {fileID: 4156676495944895166}
