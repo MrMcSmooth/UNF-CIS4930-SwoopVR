@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5945942309546106498
 Transform:
   m_ObjectHideFlags: 0
@@ -40,7 +40,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7540212468507271235}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 13
   m_Type: 0
   m_Color: {r: 1, g: 0.9370578, b: 0.7122642, a: 1}
@@ -302,10 +302,10 @@ PrefabInstance:
       addedObject: {fileID: 465836634081029827}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8000672891519768471}
+      addedObject: {fileID: 5207572045181446551}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5207572045181446551}
+      addedObject: {fileID: 7825088855248750529}
     - targetCorrespondingSourceObject: {fileID: 1804508720191139184, guid: 4122eba39453ec24c9dcb4a9823bea2d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6076523025830595878}
@@ -620,19 +620,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &8000672891519768471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770932932861188808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce4b579a30ecbb74f9641236184a42bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  flashlightLight: {fileID: 5053432689834118206}
 --- !u!114 &5207572045181446551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,3 +634,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LightSwitch
   targetLight: {fileID: 5053432689834118206}
   battery: {fileID: 4156676495944895166}
+--- !u!114 &7825088855248750529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770932932861188808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c48ea836e40e2f40be16b396488c8b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRUseDispatcher
