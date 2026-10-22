@@ -43,7 +43,7 @@ public class PlayerCheckpoint : MonoBehaviour
 
         checkPos = checkpoint.position;
         checkRot = checkpoint.rotation;
-        //Debug.Log("Checkpoint set to: " + checkPos + ", " + checkRot);
+        Debug.Log("Checkpoint set to: " + checkPos + ", " + checkRot);
     }
 
     public void Die()

@@ -11,6 +11,8 @@ public class RespawnTrigger : MonoBehaviour
     [SerializeField] private TriggerType triggerType;
     [SerializeField] private Transform checkpointLocation;
 
+    private bool firstTrigger = false;
+
     private void OnTriggerEnter(Collider other)
     {
         PlayerCheckpoint playerCheckpoint = other.GetComponentInParent<PlayerCheckpoint>();
@@ -24,11 +26,12 @@ public class RespawnTrigger : MonoBehaviour
         {
             playerCheckpoint.Die();
         }
-        else if (triggerType == TriggerType.Checkpoint)
+        else if (triggerType == TriggerType.Checkpoint && !firstTrigger)
         {
             if(checkpointLocation != null)
             {
                 playerCheckpoint.SetCheckpoint(checkpointLocation);
+                firstTrigger = true;
             } else
             {
                 Debug.LogWarning("Checkpoint location is not set for the checkpoint trigger.");
