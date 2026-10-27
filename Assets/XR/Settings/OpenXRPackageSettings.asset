@@ -869,10 +869,8 @@ MonoBehaviour:
   features:
   - {fileID: 8736661028334727731}
   - {fileID: 3598254934845347770}
-  - {fileID: 5251090855871794619}
-  - {fileID: 1598233505001045830}
   - {fileID: 8593613762269632121}
-  - {fileID: -2816174857750972616}
+  - {fileID: 1598233505001045830}
   - {fileID: 1170704673688743257}
   - {fileID: -4352138005575186322}
   - {fileID: -2704800931075271787}
@@ -883,7 +881,6 @@ MonoBehaviour:
   - {fileID: 8579781608529860403}
   - {fileID: -4006158474501928448}
   - {fileID: -6264328625622475078}
-  - {fileID: 5832810731626306615}
   - {fileID: -8705318006256794946}
   - {fileID: 6481653220666705815}
   - {fileID: 7393116930172532905}
@@ -1250,10 +1247,6 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
-  optionalFeatures: []
-  symmetricProjection: 0
-  optimizeBufferDiscards: 1
-  multiviewRenderRegionsOptimizationMode: 0
 --- !u!114 &-2778858118241658710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,8 +1681,6 @@ MonoBehaviour:
   - {fileID: 2051105749830685677}
   - {fileID: 9107130776508118847}
   - {fileID: 7897612548170415764}
-  - {fileID: -2471362674905606801}
-  - {fileID: -1776022748746372934}
   - {fileID: 8980318060753866109}
   - {fileID: -6559185765804338520}
   - {fileID: -4756202077021157709}
@@ -1701,7 +1692,6 @@ MonoBehaviour:
   - {fileID: -7499073031166464939}
   - {fileID: 7666556398442971420}
   - {fileID: 7677311104676317214}
-  - {fileID: 4968551489446204212}
   - {fileID: -6978811377440417770}
   - {fileID: -6974919542627570209}
   - {fileID: 2269934188850680656}

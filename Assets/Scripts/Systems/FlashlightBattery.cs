@@ -7,7 +7,7 @@ public class FlashlightBattery : MonoBehaviour
     [Header("Battery")]
     [SerializeField] private float maxBatteryLife = 100f;
     [SerializeField] private float batteryLife = 50f;
-    [SerializeField] private float batteryDrainRate = 5f;
+    [SerializeField] private float batteryDrainRate = 0f;
     
     private void Update()
     {
