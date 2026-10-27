@@ -2,6 +2,8 @@
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement;
 
 public class SprintController : MonoBehaviour
 {
