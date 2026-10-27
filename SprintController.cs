@@ -22,7 +22,7 @@ public class SprintController : MonoBehaviour
     private bool isSprinting;
     private bool isRecharging;
 
-    public ContinuousMoveProvider moveProvider;
+    public ContinuousMoveProvider moveProvider; // DynamicMoveProvider was deprecated, using ContinuousMoveProvider instead
 
     private void OnEnable()
     {
@@ -115,6 +115,7 @@ public class SprintController : MonoBehaviour
         if (moveProvider != null)
         {
             moveProvider.moveSpeed = normalSpeed * sprintMultiplier;
+
             // print speed right after setting it to verify
             Debug.Log("MoveProvider speed is now set to: " + moveProvider.moveSpeed);
         }
