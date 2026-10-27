@@ -9,21 +9,46 @@ public class SprintController : MonoBehaviour
 {
     [Header("Movement")]
     public float normalSpeed = 1f;
-    public float sprintMultiplier = 1.5f; // can slow down or speed up
+    public float sprintMultiplier = 8f;
 
     [Header("Stamina")]
-    public float maxSprintDuration = 8f; // can increase or reduce
-    public float rechargeDuration = 12f; // can increase or reduce
+    public float maxSprintDuration = 8f;
+    public float rechargeDuration = 12f;
+
+    [Header("Input")]
+    public InputActionReference sprintButton;
 
     private float currentSprintTime;
     private bool isSprinting;
     private bool isRecharging;
 
-    public DynamicMoveProvider moveProvider;
+    public ContinuousMoveProvider moveProvider;
+
+    private void OnEnable()
+    {
+        if (sprintButton != null && sprintButton.action != null)
+        {
+            sprintButton.action.Enable();
+            sprintButton.action.performed += OnSprintPerformed;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (sprintButton != null && sprintButton.action != null)
+        {
+            sprintButton.action.performed -= OnSprintPerformed;
+        }
+    }
 
     private void Start()
     {
         currentSprintTime = maxSprintDuration;
+
+        if (moveProvider == null)
+        {
+            moveProvider = GetComponentInChildren<ContinuousMoveProvider>();
+        }
 
         if (moveProvider != null)
         {
@@ -33,6 +58,14 @@ public class SprintController : MonoBehaviour
 
     private void Update()
     {
+        // check for left shift on keyboard
+        if (Keyboard.current != null && Keyboard.current.leftShiftKey.wasPressedThisFrame)
+        {
+            Debug.Log("Shift was pressed.");
+            ToggleSprint();
+        }
+
+        // stamina drain / recharge logic
         if (isSprinting)
         {
             currentSprintTime -= Time.deltaTime;
@@ -53,6 +86,11 @@ public class SprintController : MonoBehaviour
                 isRecharging = false;
             }
         }
+    }
+
+    private void OnSprintPerformed(InputAction.CallbackContext context)
+    {
+        ToggleSprint();
     }
 
     public void ToggleSprint()
@@ -77,6 +115,8 @@ public class SprintController : MonoBehaviour
         if (moveProvider != null)
         {
             moveProvider.moveSpeed = normalSpeed * sprintMultiplier;
+            // print speed right after setting it to verify
+            Debug.Log("MoveProvider speed is now set to: " + moveProvider.moveSpeed);
         }
     }
 
