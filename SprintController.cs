@@ -17,7 +17,6 @@ public class SprintController : MonoBehaviour
     private bool isSprinting;
     private bool isRecharging;
 
-    // Reference to your movement component
     public DynamicMoveProvider moveProvider;
 
     private void Start()
