@@ -7,13 +7,14 @@ public class FlashlightBattery : MonoBehaviour
     [Header("Battery")]
     [SerializeField] private float maxBatteryLife = 100f;
     [SerializeField] private float batteryLife = 50f;
-    [SerializeField] private float batteryDrainRate = 0f;
+    [SerializeField] private float batteryDrainRate = 5f;
     
     private void Update()
     {
+     //   Debug.Log($"Battery Life: {batteryLife}");
         if (targetLight == null)
         {
-            Debug.LogWarning("Target light is not assigned.");
+           // Debug.LogWarning("Target light is not assigned.");
             return;
         }
 

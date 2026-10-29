@@ -1,31 +1,37 @@
 using UnityEngine;
-using static RespawnTrigger;
 
 public class FlashRayCast : MonoBehaviour
 {
 
     [SerializeField] private Light targetLight;
+    [SerializeField] private float rayDistance = 10f;
 
     void Update()
     {
+        if(targetLight == null || !targetLight.enabled)
+        {
+            return;
+        }
+
         Ray ray = new Ray(transform.position, transform.forward);
+        Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
+
         RaycastHit hitThatThang;
 
         //AlienLogic aL = new ColliderHit().transform.GetComponent<AlienLogic>;
 
-        Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
+
 
         if (Physics.Raycast(ray, out hitThatThang) && targetLight.enabled)
         {
-            GameObject Target = hitThatThang.transform.gameObject;
+            AlienLogic alien = hitThatThang.collider.GetComponent<AlienLogic>();
 
-            if(Target.name == "Alien")
+            if (alien != null)
             {
-                AlienLogic AL = Target.GetComponent<AlienLogic>();
-                AL.Scared();
+                alien.Scared();
             }
 
-            Debug.Log($"Hit {hitThatThang.collider.gameObject.name} at distance {hitThatThang.distance}");
+            //Debug.Log($"Hit {hitThatThang.collider.gameObject.name} at distance {hitThatThang.distance}");
         }
 
 
