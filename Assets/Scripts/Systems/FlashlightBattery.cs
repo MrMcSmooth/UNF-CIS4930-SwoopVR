@@ -50,4 +50,9 @@ public class FlashlightBattery : MonoBehaviour
     {
         return batteryLife;
     }
+
+    public float GetMaxBatteryLife()
+    {
+        return maxBatteryLife;
+    }
 }
