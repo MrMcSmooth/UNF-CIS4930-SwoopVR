@@ -10,6 +10,8 @@ public class SceneTransport : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(loadScene);
+            Debug.Log("Hello from if");
         }
+        Debug.Log("Hello from out");
     }
 }
