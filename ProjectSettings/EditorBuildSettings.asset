@@ -5,7 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+<<<<<<< Updated upstream
   - enabled: 1
+=======
+  - enabled: 0
+>>>>>>> Stashed changes
     path: Assets/Scenes/TeleportTest.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   m_configObjects:
