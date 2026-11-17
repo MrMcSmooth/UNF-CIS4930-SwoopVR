@@ -66,7 +66,7 @@ MonoBehaviour:
       - rid: 653666819489136650
       - rid: 653666819489136651
       - rid: 653666819489136652
-      - rid: 3154562160007577602
+      - rid: 4628294291601752066
     m_RuntimeSettings:
       m_List: []
   m_AssetVersion: 10
@@ -436,7 +436,7 @@ MonoBehaviour:
         m_version: 0
         m_EnableCompilationCaching: 1
         m_EnableValidityChecks: 1
-    - rid: 3154562160007577602
+    - rid: 4628294291601752066
       type: {class: WorldRenderPipelineResources, ns: UnityEngine.PathTracing.Core, asm: Unity.PathTracing.Runtime}
       data:
         _version: 3
