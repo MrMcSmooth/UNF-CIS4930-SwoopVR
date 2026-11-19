@@ -573,6 +573,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 190952, guid: 0c2642e071b134aa3bfb882521145afb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 79763314}
+    - targetCorrespondingSourceObject: {fileID: 190952, guid: 0c2642e071b134aa3bfb882521145afb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 79763317}
   m_SourcePrefab: {fileID: 100100000, guid: 0c2642e071b134aa3bfb882521145afb, type: 3}
 --- !u!1 &79763313 stripped
 GameObject:
@@ -608,6 +611,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &79763317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79763313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &83123681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: fb7ea84b5181a43e5a7fbc8a83a564ab, type: 3}
@@ -635,10 +654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &92388529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,6 +683,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &92388532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92388526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1 &94310026 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
@@ -871,6 +902,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 198186, guid: 0156d82925fa4477e95bd73f098c846b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 114886894}
+    - targetCorrespondingSourceObject: {fileID: 198186, guid: 0156d82925fa4477e95bd73f098c846b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 114886897}
   m_SourcePrefab: {fileID: 100100000, guid: 0156d82925fa4477e95bd73f098c846b, type: 3}
 --- !u!1 &114886890 stripped
 GameObject:
@@ -918,7 +952,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &114886897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114886890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -988,10 +1034,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!1001 &182808060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1178,12 +1220,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 182808070}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 182808076}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 182808063}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 182808069}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 182808075}
   m_SourcePrefab: {fileID: 100100000, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
 --- !u!1 &182808061 stripped
 GameObject:
@@ -1265,10 +1313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &182808070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,7 +1325,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &182808075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182808061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &182808076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182808062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -1600,6 +1672,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 111332, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 212704499}
+    - targetCorrespondingSourceObject: {fileID: 111332, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 212704502}
   m_SourcePrefab: {fileID: 100100000, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
 --- !u!1 &212704491 stripped
 GameObject:
@@ -1681,7 +1756,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &212704502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212704491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -1863,10 +1950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &251287819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1896,6 +1979,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &251287822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251287816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &253631269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2198,18 +2297,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100010, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 633115562}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 633115565}
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 272195890}
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 272195897}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331859520}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 272195889}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 272195900}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 272195906}
   m_SourcePrefab: {fileID: 100100000, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
 --- !u!1 &272195885 stripped
 GameObject:
@@ -2359,10 +2467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &272195900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2375,10 +2479,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &272195901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2391,7 +2491,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &272195906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272195885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -2726,6 +2838,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289152557}
   m_Mesh: {fileID: 4300002, guid: c9899e9cbdb1b4efeacf7018543d5067, type: 3}
+--- !u!114 &289607854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &296944768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2940,33 +3068,51 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100012, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2077485666}
+    - targetCorrespondingSourceObject: {fileID: 100012, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2077485670}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1941920888}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1941920887}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1941920891}
     - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 577390647}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 577390650}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1809803198}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1809803197}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1809803201}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 92388529}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 92388528}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 92388532}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1474350220}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1474350219}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1474350223}
   m_SourcePrefab: {fileID: 100100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
 --- !u!4 &300219566 stripped
 Transform:
@@ -3074,6 +3220,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
   m_PrefabInstance: {fileID: 1350919924}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &331859520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272195886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &332680860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: d9496913daf444c5c9205545c44d78c4, type: 3}
@@ -3324,15 +3486,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 173216, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 764035857}
+    - targetCorrespondingSourceObject: {fileID: 173216, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 764035860}
     - targetCorrespondingSourceObject: {fileID: 173222, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 951456264}
+    - targetCorrespondingSourceObject: {fileID: 173222, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 951456267}
     - targetCorrespondingSourceObject: {fileID: 173228, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 737922633}
+    - targetCorrespondingSourceObject: {fileID: 173228, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737922636}
     - targetCorrespondingSourceObject: {fileID: 173234, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1787704662}
+    - targetCorrespondingSourceObject: {fileID: 173234, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1787704665}
   m_SourcePrefab: {fileID: 100100000, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
 --- !u!1001 &363286213
 PrefabInstance:
@@ -3461,10 +3635,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &401916889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3494,6 +3664,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &401916892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401916886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1 &410776854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
@@ -3528,11 +3714,43 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &410776859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410776854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &413011779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 9bbcc483cff204c6ca6b74652840294e, type: 3}
   m_PrefabInstance: {fileID: 1453270873}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &423398030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &425569202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3806,6 +4024,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 143818, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1297185213}
+    - targetCorrespondingSourceObject: {fileID: 143818, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1297185217}
     - targetCorrespondingSourceObject: {fileID: 143812, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 527351398}
@@ -4025,27 +4246,42 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 885824677}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 885824680}
     - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 443422961}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 443422966}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 443422960}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 798100085}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 798100088}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 443422959}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 443422970}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 443422976}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 323125498}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1319147052}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1319147055}
   m_SourcePrefab: {fileID: 100100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
 --- !u!1 &443422953 stripped
 GameObject:
@@ -4222,6 +4458,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &443422966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443422956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!114 &443422970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4234,10 +4486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &443422973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4250,7 +4498,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &443422976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443422954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -4657,10 +4917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &510992478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4690,6 +4946,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &510992481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510992475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1 &512749101 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 9bbcc483cff204c6ca6b74652840294e, type: 3}
@@ -4717,10 +4989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &527351398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4825,6 +5093,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &577390650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577390645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &577453497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
@@ -5150,7 +5434,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &633115565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272195887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -5340,9 +5636,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 638980397}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 638980400}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 638980391}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 638980395}
   m_SourcePrefab: {fileID: 100100000, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
 --- !u!1 &638980389 stripped
 GameObject:
@@ -5412,6 +5714,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &638980395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638980389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!114 &638980397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5424,7 +5742,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &638980400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638980390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -5445,10 +5775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &641201184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5478,6 +5804,27 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!108 &641201186 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 10800000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+  m_PrefabInstance: {fileID: 765699066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &641201187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641201181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &649133798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 497138, guid: 3e541691191f44de8b9db8a516d098f3, type: 3}
@@ -5505,10 +5852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &658438450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5538,6 +5881,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &658438453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658438447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &665542779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 493604, guid: 2504b53e39a2545538e6b5f5573f2bf3, type: 3}
@@ -5859,6 +6218,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 198572, guid: 84fb110a1f7914dcda0bac2733a6a949, type: 3}
       insertIndex: -1
       addedObject: {fileID: 685065370}
+    - targetCorrespondingSourceObject: {fileID: 198572, guid: 84fb110a1f7914dcda0bac2733a6a949, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 685065373}
   m_SourcePrefab: {fileID: 100100000, guid: 84fb110a1f7914dcda0bac2733a6a949, type: 3}
 --- !u!1 &685065369 stripped
 GameObject:
@@ -5894,6 +6256,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &685065373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685065369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &692555283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5979,10 +6357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!1001 &696898127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6233,6 +6607,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cc345f83c1c34ef0940b7b0d21cdba2, type: 3}
+--- !u!114 &704088372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!850595691 &713168539
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -7091,42 +7481,66 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100022, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 736336062}
+    - targetCorrespondingSourceObject: {fileID: 100022, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 736336068}
     - targetCorrespondingSourceObject: {fileID: 100020, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 736336053}
     - targetCorrespondingSourceObject: {fileID: 100020, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 182043917}
+    - targetCorrespondingSourceObject: {fileID: 100020, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 736336060}
     - targetCorrespondingSourceObject: {fileID: 100018, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 736336052}
     - targetCorrespondingSourceObject: {fileID: 100018, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 736336061}
+    - targetCorrespondingSourceObject: {fileID: 100018, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 736336067}
     - targetCorrespondingSourceObject: {fileID: 100016, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 736336051}
     - targetCorrespondingSourceObject: {fileID: 100016, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1011955738}
+    - targetCorrespondingSourceObject: {fileID: 100016, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011955741}
     - targetCorrespondingSourceObject: {fileID: 100026, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 736336050}
+    - targetCorrespondingSourceObject: {fileID: 100026, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 736336059}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1115480094}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1115480097}
     - targetCorrespondingSourceObject: {fileID: 100024, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1522640582}
     - targetCorrespondingSourceObject: {fileID: 100024, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1522640585}
+    - targetCorrespondingSourceObject: {fileID: 100024, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1522640588}
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1980832020}
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1980832023}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1980832026}
     - targetCorrespondingSourceObject: {fileID: 100012, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1881321099}
@@ -7139,18 +7553,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100010, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 770091115}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 770091118}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 970110413}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 970110416}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 970110419}
     - targetCorrespondingSourceObject: {fileID: 100014, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 722838535}
     - targetCorrespondingSourceObject: {fileID: 100014, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1280196841}
+    - targetCorrespondingSourceObject: {fileID: 100014, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1280196844}
   m_SourcePrefab: {fileID: 100100000, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
 --- !u!1 &736336038 stripped
 GameObject:
@@ -7357,6 +7780,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &736336059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1790462413}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &736336060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!114 &736336061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7369,10 +7824,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &736336062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7385,7 +7836,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &736336067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &736336068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -7496,6 +7975,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &737922636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737922631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1 &737927882
 GameObject:
   m_ObjectHideFlags: 0
@@ -7762,12 +8257,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 143818, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 759034574}
+    - targetCorrespondingSourceObject: {fileID: 143818, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 759034580}
     - targetCorrespondingSourceObject: {fileID: 143812, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 759034567}
     - targetCorrespondingSourceObject: {fileID: 143812, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 759034573}
+    - targetCorrespondingSourceObject: {fileID: 143812, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 759034579}
   m_SourcePrefab: {fileID: 100100000, guid: e1e43b751e1c847fcb7618aace293dfc, type: 3}
 --- !u!1 &759034565 stripped
 GameObject:
@@ -7849,10 +8350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &759034574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7865,7 +8362,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &759034579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759034565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &759034580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759034566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -7903,6 +8428,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &764035860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764035855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &765699066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8131,33 +8672,51 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100012, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 401916888}
+    - targetCorrespondingSourceObject: {fileID: 100012, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401916892}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 251287819}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 251287818}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 251287822}
     - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1583166575}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1583166578}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1460358019}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1460358018}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1460358022}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 641201184}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 641201183}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 641201187}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 658438450}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 658438449}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 658438453}
   m_SourcePrefab: {fileID: 100100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
 --- !u!4 &768143633 stripped
 Transform:
@@ -8205,7 +8764,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!108 &770091117 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 10800006, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+  m_PrefabInstance: {fileID: 736336037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &770091118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -8592,6 +9168,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 791265851}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 791265857}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 791265850}
@@ -8604,12 +9183,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1496616620}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1496616623}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 791265848}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 791265859}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 791265862}
   m_SourcePrefab: {fileID: 100100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
 --- !u!1 &791265843 stripped
 GameObject:
@@ -8781,6 +9366,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &791265857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791265846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!114 &791265859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8793,7 +9394,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &791265862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791265843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -8863,7 +9476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453240, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22
+      value: 21.99
       objectReference: {fileID: 0}
     - target: {fileID: 453240, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8972,18 +9585,30 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 118370, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 797525046}
+    - targetCorrespondingSourceObject: {fileID: 118370, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 797525051}
+    - targetCorrespondingSourceObject: {fileID: 118370, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 797525052}
     - targetCorrespondingSourceObject: {fileID: 118368, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 797525045}
     - targetCorrespondingSourceObject: {fileID: 118368, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614458266}
+    - targetCorrespondingSourceObject: {fileID: 118368, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1614458269}
     - targetCorrespondingSourceObject: {fileID: 118366, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 797525044}
     - targetCorrespondingSourceObject: {fileID: 118366, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 797525053}
+    - targetCorrespondingSourceObject: {fileID: 118366, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 797525056}
     - targetCorrespondingSourceObject: {fileID: 118364, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 797525043}
@@ -9124,6 +9749,43 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!108 &797525050 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 10818370, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+  m_PrefabInstance: {fileID: 797525038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &797525051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797525042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &797525052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797525042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 797525050}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!114 &797525053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9136,7 +9798,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!108 &797525055 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 10818366, guid: 48d2973b7a25b451ea97a6eaf756f8cb, type: 3}
+  m_PrefabInstance: {fileID: 797525038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &797525056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797525040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 797525055}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -9152,7 +9831,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &798100088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443422955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -9317,7 +10008,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!108 &885824679 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 10800008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+  m_PrefabInstance: {fileID: 443422952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &885824680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443422957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -9657,6 +10365,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 896878569}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 896878572}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 896878563}
@@ -9741,7 +10452,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &896878572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896878562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -9958,12 +10681,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 917006419}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 917006425}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 917006412}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 917006418}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 917006424}
   m_SourcePrefab: {fileID: 100100000, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
 --- !u!1 &917006410 stripped
 GameObject:
@@ -10045,10 +10774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &917006419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10061,7 +10786,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &917006424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917006410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &917006425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917006411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -10190,6 +10943,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &951456267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951456262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &954136867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 474514, guid: a7d85abdc9b0b43f8858bad8d92695a2, type: 3}
@@ -10314,7 +11083,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &970110419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -10573,7 +11354,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1011955741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -10890,10 +11683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!1001 &1043745543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11504,6 +12293,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1115480097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1790462413}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &1117662215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11622,10 +12427,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1122028495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11655,6 +12456,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1122028498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122028492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1 &1122578435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
@@ -11689,6 +12506,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1122578441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122578435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &1140455916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
@@ -12101,6 +12934,22 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 762c47b7f0049fb41bb8f82619923808, type: 2}
   m_BuildHeightMesh: 0
+--- !u!114 &1243776652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &1253703446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12314,7 +13163,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1280196844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -12504,6 +13365,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1283752120}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1283752125}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1283752113}
@@ -12591,10 +13455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1283752120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12607,7 +13467,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1283752125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283752112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -12839,10 +13711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1297185214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12872,6 +13740,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1297185217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297185211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &1306480291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: be50ff3ed2fbe44349a64d3ac5fb98ee, type: 3}
@@ -12894,7 +13778,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1319147055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443422953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -13093,12 +13989,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 181008, guid: 031729a7ef10c4aa1b5e0060c2f63acd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1321475680}
+    - targetCorrespondingSourceObject: {fileID: 181008, guid: 031729a7ef10c4aa1b5e0060c2f63acd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321475683}
     - targetCorrespondingSourceObject: {fileID: 181014, guid: 031729a7ef10c4aa1b5e0060c2f63acd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1321475679}
     - targetCorrespondingSourceObject: {fileID: 181014, guid: 031729a7ef10c4aa1b5e0060c2f63acd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1321475685}
+    - targetCorrespondingSourceObject: {fileID: 181014, guid: 031729a7ef10c4aa1b5e0060c2f63acd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1321475688}
   m_SourcePrefab: {fileID: 100100000, guid: 031729a7ef10c4aa1b5e0060c2f63acd, type: 3}
 --- !u!1 &1321475677 stripped
 GameObject:
@@ -13168,6 +14070,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1321475683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321475678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!114 &1321475685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13180,7 +14098,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1321475688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321475677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1790462413}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -13201,10 +14131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1329754475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13234,6 +14160,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1329754478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329754472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &1334435213 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
@@ -13251,10 +14193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!1001 &1349953223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13478,10 +14416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!1 &1353901342
 GameObject:
   m_ObjectHideFlags: 0
@@ -13828,9 +14762,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100012, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1752926155}
+    - targetCorrespondingSourceObject: {fileID: 100012, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1752926158}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1122578438}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1122578441}
     - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1406189508}
@@ -13843,12 +14783,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1406189516}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406189522}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1406189505}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1406189515}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406189521}
   m_SourcePrefab: {fileID: 100100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
 --- !u!1 &1406189501 stripped
 GameObject:
@@ -13998,10 +14944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1406189516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14014,7 +14956,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1406189521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406189501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.6
+  maxIntensity: 2.44
+  flickerSpeed: 0.08
+--- !u!114 &1406189522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406189502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -14307,24 +15277,36 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1802046306}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1802046309}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1412583113}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1850533071}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1850533074}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1412583112}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1508664058}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1508664061}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1412583111}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1412583122}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1412583125}
   m_SourcePrefab: {fileID: 100100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
 --- !u!1 &1412583106 stripped
 GameObject:
@@ -14508,7 +15490,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1412583125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412583106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -14709,6 +15703,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1437676437}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1437676440}
   m_SourcePrefab: {fileID: 100100000, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
 --- !u!1 &1437676433 stripped
 GameObject:
@@ -14756,7 +15753,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1437676440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437676433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -14921,10 +15930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!4 &1444044780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
@@ -15044,6 +16049,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1447254257}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1447254260}
   m_SourcePrefab: {fileID: 100100000, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
 --- !u!1 &1447254253 stripped
 GameObject:
@@ -15091,7 +16099,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1447254260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447254253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -15233,6 +16253,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1451531761}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1451531764}
   m_SourcePrefab: {fileID: 100100000, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
 --- !u!1 &1451531753 stripped
 GameObject:
@@ -15314,7 +16337,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1451531764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451531753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -15551,10 +16586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1460358019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15584,6 +16615,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1460358022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460358016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &1469458707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 440360, guid: d8b78681a0006415a824f4e6273244dd, type: 3}
@@ -15606,10 +16653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1474350220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15639,6 +16682,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1474350223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474350217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &1477148962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: ac93356612ce24c718977a61ed7246de, type: 3}
@@ -15695,7 +16754,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1496616623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791265844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -15901,10 +16972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1504257894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15934,6 +17001,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1504257897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504257891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &1505090010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16107,7 +17190,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1508664061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412583107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -16128,10 +17223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1522640582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16173,7 +17264,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!108 &1522640587 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 10800020, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+  m_PrefabInstance: {fileID: 736336037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1522640588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -16391,33 +17499,51 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100012, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1122028494}
+    - targetCorrespondingSourceObject: {fileID: 100012, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1122028498}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 510992478}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 510992477}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 510992481}
     - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 410776856}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 410776859}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1504257894}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1504257893}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1504257897}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1329754475}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1329754474}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1329754478}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1669115535}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1669115534}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ac93356612ce24c718977a61ed7246de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1669115538}
   m_SourcePrefab: {fileID: 100100000, guid: ac93356612ce24c718977a61ed7246de, type: 3}
 --- !u!4 &1558917857 stripped
 Transform:
@@ -16559,12 +17685,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1568394224}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1568394230}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1568394217}
     - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1568394223}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1568394229}
   m_SourcePrefab: {fileID: 100100000, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
 --- !u!1 &1568394215 stripped
 GameObject:
@@ -16646,10 +17778,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1568394224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16662,7 +17790,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1568394229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568394215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &1568394230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568394216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -16773,6 +17929,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1583166578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583166573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1 &1583675900
 GameObject:
   m_ObjectHideFlags: 0
@@ -17172,12 +18344,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1608146269}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1608146274}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1608146263}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1608146267}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1608146273}
   m_SourcePrefab: {fileID: 100100000, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
 --- !u!1 &1608146261 stripped
 GameObject:
@@ -17259,10 +18437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1608146269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17275,7 +18449,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1608146273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608146261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &1608146274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608146262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -17817,45 +19019,72 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100022, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614308281}
+    - targetCorrespondingSourceObject: {fileID: 100022, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1614308287}
     - targetCorrespondingSourceObject: {fileID: 100020, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614308272}
     - targetCorrespondingSourceObject: {fileID: 100020, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1764223235}
+    - targetCorrespondingSourceObject: {fileID: 100020, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1764223238}
     - targetCorrespondingSourceObject: {fileID: 100018, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614308271}
     - targetCorrespondingSourceObject: {fileID: 100018, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614308280}
+    - targetCorrespondingSourceObject: {fileID: 100018, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1614308286}
     - targetCorrespondingSourceObject: {fileID: 100016, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614308270}
     - targetCorrespondingSourceObject: {fileID: 100016, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1522386340}
+    - targetCorrespondingSourceObject: {fileID: 100016, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 423398030}
     - targetCorrespondingSourceObject: {fileID: 100026, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614308269}
     - targetCorrespondingSourceObject: {fileID: 100026, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1614308276}
+    - targetCorrespondingSourceObject: {fileID: 100026, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1614308279}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 76231237}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1037099057}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 704088372}
     - targetCorrespondingSourceObject: {fileID: 100024, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1018499749}
+    - targetCorrespondingSourceObject: {fileID: 100024, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 289607854}
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1184537081}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2004961137}
     - targetCorrespondingSourceObject: {fileID: 100012, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1594759140}
+    - targetCorrespondingSourceObject: {fileID: 100012, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1629835280}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1481378119}
@@ -17868,6 +19097,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100014, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1288349940}
+    - targetCorrespondingSourceObject: {fileID: 100014, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1243776652}
   m_SourcePrefab: {fileID: 100100000, guid: 61485a9a68e6845828d6e61f3d353298, type: 3}
 --- !u!1 &1614308257 stripped
 GameObject:
@@ -18086,7 +19318,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1614308279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -18102,10 +19346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1614308281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18118,7 +19358,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1614308286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &1614308287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -18134,7 +19402,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1614458269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797525041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1790462413}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -18150,10 +19430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!1001 &1627654908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18227,6 +19503,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bbcc483cff204c6ca6b74652840294e, type: 3}
+--- !u!114 &1629835280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1 &1640781403
 GameObject:
   m_ObjectHideFlags: 0
@@ -18436,10 +19728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1669115535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18469,6 +19757,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1669115538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669115532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &1694586268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19136,12 +20440,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1732159359}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1732159364}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1732159353}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1732159357}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1732159363}
   m_SourcePrefab: {fileID: 100100000, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
 --- !u!1 &1732159351 stripped
 GameObject:
@@ -19223,10 +20533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1732159359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19239,7 +20545,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1732159363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732159351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &1732159364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732159352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -19277,6 +20611,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1752926158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752926152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &1758249191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 416936, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
@@ -19491,6 +20841,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1763538645}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1763538651}
   m_SourcePrefab: {fileID: 100100000, guid: c046375e7bf1c42cdac74810855eae68, type: 3}
 --- !u!1 &1763538637 stripped
 GameObject:
@@ -19572,10 +20925,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1763538646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19588,7 +20937,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1763538651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763538637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -19604,7 +20965,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1764223238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -19814,6 +21187,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1787704665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787704660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &1790462395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20108,15 +21497,24 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 180426, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1790462410}
+    - targetCorrespondingSourceObject: {fileID: 180426, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1790462417}
     - targetCorrespondingSourceObject: {fileID: 180424, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1790462402}
+    - targetCorrespondingSourceObject: {fileID: 180424, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1790462408}
     - targetCorrespondingSourceObject: {fileID: 134400, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1790462401}
     - targetCorrespondingSourceObject: {fileID: 134400, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1790462411}
+    - targetCorrespondingSourceObject: {fileID: 134400, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1790462416}
     - targetCorrespondingSourceObject: {fileID: 134402, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1790462400}
@@ -20260,6 +21658,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1790462408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790462398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!114 &1790462410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20272,10 +21686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1790462411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20288,7 +21698,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!108 &1790462413 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 10834400, guid: 32b92806568114f7f8a2c419fdf23bea, type: 3}
+  m_PrefabInstance: {fileID: 1790462395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1790462416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790462397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1790462413}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &1790462417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790462399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -20410,7 +21853,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1802046309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412583109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -20436,10 +21891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1809803198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20469,6 +21920,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1809803201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809803195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &1822699301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 6303ec70701ed4d31806e2ce8a7af08c, type: 3}
@@ -20673,6 +22140,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1834945076}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1834945079}
   m_SourcePrefab: {fileID: 100100000, guid: 956ac30281e784ac8bfbd55765786260, type: 3}
 --- !u!1 &1834945072 stripped
 GameObject:
@@ -20720,7 +22190,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1834945079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834945072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -21042,10 +22524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!4 &1850294235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 22fc62775f090453b8a270508d2df1a0, type: 3}
@@ -21063,7 +22541,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1850533074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412583108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -21185,6 +22675,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 129504, guid: 889e835eaaf3b40ceb9a7b553c835820, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1860519751}
+    - targetCorrespondingSourceObject: {fileID: 129504, guid: 889e835eaaf3b40ceb9a7b553c835820, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860519754}
   m_SourcePrefab: {fileID: 100100000, guid: 889e835eaaf3b40ceb9a7b553c835820, type: 3}
 --- !u!1 &1860519747 stripped
 GameObject:
@@ -21232,7 +22725,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1860519754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860519747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1790462413}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -21355,10 +22860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!4 &1903819947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 423358, guid: 94aa6bb10a2084bbb842e5fe1b92578f, type: 3}
@@ -21598,12 +23099,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 111326, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1926603478}
+    - targetCorrespondingSourceObject: {fileID: 111326, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1926603483}
     - targetCorrespondingSourceObject: {fileID: 111332, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1926603471}
     - targetCorrespondingSourceObject: {fileID: 111332, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1926603477}
+    - targetCorrespondingSourceObject: {fileID: 111332, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1926603484}
   m_SourcePrefab: {fileID: 100100000, guid: e2bb8688208ec4855995dc3671b6c8a8, type: 3}
 --- !u!1 &1926603469 stripped
 GameObject:
@@ -21685,10 +23192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1926603478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21701,7 +23204,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1926603483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926603470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &1926603484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926603469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -21737,10 +23268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1941920888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21770,6 +23297,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1941920891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941920885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!4 &1948182562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: be50ff3ed2fbe44349a64d3ac5fb98ee, type: 3}
@@ -22107,10 +23650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &1980832020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22152,7 +23691,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &1980832026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736336042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -22311,6 +23862,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be50ff3ed2fbe44349a64d3ac5fb98ee, type: 3}
+--- !u!114 &2004961137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614308261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &2007978738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22491,6 +24058,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 198572, guid: 84fb110a1f7914dcda0bac2733a6a949, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2042372139}
+    - targetCorrespondingSourceObject: {fileID: 198572, guid: 84fb110a1f7914dcda0bac2733a6a949, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2042372142}
   m_SourcePrefab: {fileID: 100100000, guid: 84fb110a1f7914dcda0bac2733a6a949, type: 3}
 --- !u!1 &2042372135 stripped
 GameObject:
@@ -22538,7 +24108,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &2042372142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042372135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -22554,10 +24136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!1001 &2048532443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22900,24 +24478,36 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100008, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063167443}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2063167447}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063167432}
     - targetCorrespondingSourceObject: {fileID: 100010, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1975848963}
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2063167438}
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063167431}
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2045939424}
+    - targetCorrespondingSourceObject: {fileID: 100006, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2063167439}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063167430}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063167440}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2063167446}
   m_SourcePrefab: {fileID: 100100000, guid: 8a0669be60aaf43bc84e95a66b4f5248, type: 3}
 --- !u!1 &2063167426 stripped
 GameObject:
@@ -23055,6 +24645,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &2063167438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063167428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1790462413}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &2063167439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063167427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 1522640587}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!114 &2063167440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23067,10 +24689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &2063167443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23083,7 +24701,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
+--- !u!114 &2063167446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063167426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 641201186}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
+--- !u!114 &2063167447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063167429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 770091117}
   minIntensity: 0.2
   maxIntensity: 1.2
   flickerSpeed: 0.08
@@ -23104,10 +24750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!114 &2077485667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23137,6 +24779,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &2077485670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077485664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d241adc16bafd8a42993f7f6d37721d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
+  targetLight: {fileID: 885824679}
+  minIntensity: 0.2
+  maxIntensity: 1.2
+  flickerSpeed: 0.08
 --- !u!1001 &2082459050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23449,10 +25107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28eb411c43a2624cb622801e56c208f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlickerLight
-  targetLight: {fileID: 0}
-  minIntensity: 0.2
-  maxIntensity: 1.2
-  flickerSpeed: 0.08
 --- !u!4 &2120712663 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: fb7ea84b5181a43e5a7fbc8a83a564ab, type: 3}
