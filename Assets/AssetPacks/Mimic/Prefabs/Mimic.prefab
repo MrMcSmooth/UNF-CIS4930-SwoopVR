@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8675915457954794082}
   - component: {fileID: 8675915457954794083}
-  - component: {fileID: 608258904}
+  - component: {fileID: -5843812872690305045}
   m_Layer: 0
   m_Name: Mimic
   m_TagString: Untagged
@@ -25,6 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8675915457954794080}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,7 +33,6 @@ Transform:
   m_Children:
   - {fileID: 8675915458194695970}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8675915457954794083
 MonoBehaviour:
@@ -63,8 +63,8 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
-  velocity: {x: 0.051775977, y: 0, z: 0.4935444}
---- !u!114 &608258904
+  velocity: {x: -0.91179186, y: 0, z: -0.007981471}
+--- !u!114 &-5843812872690305045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,12 +73,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8675915457954794080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0ba22986a1af554791e80503075c599, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d97d6d0c34b444992ab3f3007791ba, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  height: 0.8
-  speed: 5
-  velocityLerpCoef: 4
+  m_EditorClassIdentifier: Assembly-CSharp::MimicSpace.MimicChase
+  player: {fileID: 0}
+  navigator: {fileID: 0}
+  bodyHeight: 0.8
+  turnSpeed: 8
+  updateInterval: 0.2
 --- !u!1 &8675915458194695971
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,13 +106,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8675915458194695971}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8675915457954794082}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8675915458194695975
 MeshFilter:
@@ -137,6 +139,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -158,7 +165,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
