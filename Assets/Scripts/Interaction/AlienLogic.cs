@@ -6,7 +6,6 @@ using MimicSpace;
 [RequireComponent(typeof(Mimic))]
 public class AlienLogic : MonoBehaviour
 {
-    [SerializeField] public float sDuration = 100f;
     private enum AlienState
     {
         Patrol,
