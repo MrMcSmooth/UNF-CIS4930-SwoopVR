@@ -72,8 +72,21 @@ namespace MimicSpace
             // is a bit offset for every leg part
             Vector2 footOffset = Random.insideUnitCircle.normalized * finalFootDistance;
             RaycastHit hit;
-            Physics.Raycast(footPosition + Vector3.up * 5f + new Vector3(footOffset.x, 0, footOffset.y), -Vector3.up, out hit);
-            handles[7] = hit.point;
+            if (Physics.Raycast(
+                footPosition + Vector3.up * 5f +
+                new Vector3(footOffset.x, 0, footOffset.y),
+                Vector3.down,
+                out hit,
+                15f,
+                Physics.DefaultRaycastLayers,
+                QueryTriggerInteraction.Ignore))
+            {
+                handles[7] = hit.point;
+            }
+            else
+            {
+                handles[7] = footPosition;
+            }
 
             legHeight = Random.Range(legMinHeight, legMaxHeight);
             rotationSpeed = Random.Range(minRotSpeed, maxRotSpeed); // * (Random.Range(0f, 1f) > 0.5f ? -1 : 1);
@@ -115,7 +128,12 @@ namespace MimicSpace
             {
                 // Check is the body is in line of sight from the foot position, and initiates the retractation if it isn't
                 RaycastHit hit;
-                if (Physics.Linecast(footPosition, transform.position, out hit))
+                if (Physics.Linecast(
+                    footPosition,
+                    transform.position,
+                    out hit,
+                    Physics.DefaultRaycastLayers,
+                    QueryTriggerInteraction.Ignore))
                 {
                     growTarget = 0;
                 }

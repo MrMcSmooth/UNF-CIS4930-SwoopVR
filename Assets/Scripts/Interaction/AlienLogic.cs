@@ -1,245 +1,363 @@
+
 using UnityEngine;
 using UnityEngine.AI;
+using MimicSpace;
 
+[RequireComponent(typeof(Mimic))]
 public class AlienLogic : MonoBehaviour
 {
-    [Header("Alien Scare")]
-    [SerializeField] private Material newMaterial;
-    [SerializeField] private float sMaxDuration = 100f;
     [SerializeField] public float sDuration = 100f;
-    [SerializeField] private float sDrain = 5f;
+    private enum AlienState
+    {
+        Patrol,
+        Chase,
+        Flee,
+        Hide
+    }
 
-    [Header("Movement")]
+    [Header("References")]
     [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private Transform player;
     [SerializeField] private Transform patrolPointA;
     [SerializeField] private Transform patrolPointB;
     [SerializeField] private Transform hideSpot;
 
+    [Header("Movement")]
     [SerializeField] private float walkSpeed = 2f;
+    [SerializeField] private float chaseSpeed = 3.5f;
     [SerializeField] private float scaredSpeed = 5f;
     [SerializeField] private float pointDistance = 0.5f;
 
-    [Header("Scared Movement")]
-    [SerializeField] private float randomOffset = 2f;
-    [SerializeField] private float directionChangeInterval = 0.5f;
+    [Header("Chase Settings")]
+    [SerializeField] private float chaseDistance = 8f;
+    [SerializeField] private float loseDistance = 12f;
+    [SerializeField] private float chaseStopDistance = 1.5f;
+    [SerializeField] private float chaseUpdateInterval = 0.2f;
+
+    [Header("Mimic Animation")]
+    [SerializeField] private float bodyHeight = 0.8f;
+    [SerializeField] private float rotationSpeed = 8f;
+
+    [Header("Alien Scare")]
+    [SerializeField] private Material newMaterial;
+    [SerializeField] private float sMaxDuration = 12f;
+    [SerializeField] private float sDrain = 1f;
+    public float sDuration = 12f;
 
     [Header("Hiding")]
     [SerializeField] private float hideDuration = 5f;
 
-    private float hideTimer;
-    private Material originalMaterial;
+    [Header("Debug")]
+    [SerializeField] private AlienState currentState = AlienState.Patrol;
+
+    private Mimic myMimic;
     private Renderer alienRenderer;
-
-    private bool isScared = false;
-    private bool isHiding = false;
-
+    private Material originalMaterial;
     private Transform currentPatrolPoint;
-    private float directionChangeTimer;
+
+    private float hideTimer;
+    private float nextChaseUpdate;
 
     void Start()
     {
-        if (agent == null)
+        myMimic = GetComponent<Mimic>();
+
+        if (player == null && Camera.main != null)
+            player = Camera.main.transform;
+
+        if (agent == null || player == null ||
+            myMimic == null || !agent.isOnNavMesh)
         {
-            agent = GetComponent<NavMeshAgent>();
+            Debug.LogError(
+                "AlienLogic: Missing reference or NavMeshAgent is not on a NavMesh.",
+                this
+            );
+
+            enabled = false;
+            return;
         }
 
-        alienRenderer = GetComponentInChildren<Renderer>();
+        // The navigator must be a separate object
+        // because the Mimic body floats above the ground.
+        if (agent.gameObject == gameObject)
+        {
+            Debug.LogError(
+                "AlienLogic: Assign a separate MimicNavigator object.",
+                this
+            );
+
+            enabled = false;
+            return;
+        }
+
+        agent.updateRotation = false;
+
+        alienRenderer = GetComponent<Renderer>();
+
+        if (alienRenderer == null)
+            alienRenderer = GetComponentInChildren<Renderer>();
 
         if (alienRenderer != null)
-        {
             originalMaterial = alienRenderer.material;
-        }
 
+        sDuration = sMaxDuration;
         currentPatrolPoint = patrolPointA;
 
-        if (agent != null && currentPatrolPoint != null)
-        {
-            agent.speed = walkSpeed;
-            agent.SetDestination(currentPatrolPoint.position);
-        }
+        BeginPatrol();
     }
 
     void Update()
     {
-        if(isHiding)
-        {
-            hideTimer -= Time.deltaTime;
-
-            if (hideTimer <= 0f)
-            {
-                StopHiding();
-            }
-
+        if (agent == null || !agent.isOnNavMesh)
             return;
-        }
 
-        if (isScared)
+        if (currentState == AlienState.Patrol ||
+            currentState == AlienState.Chase)
         {
-            DrainAlien(sDrain * Time.deltaTime);
+            float distance = HorizontalDistance(
+                agent.transform.position,
+                player.position
+            );
 
-            ScaredMovement();
-
-
-            //Debug.Log(sDuration);
-            if (sDuration <= 0)
+            if (currentState == AlienState.Patrol &&
+                distance <= chaseDistance)
             {
-                isScared = false;
-                agent.speed = walkSpeed;
-
-                currentPatrolPoint = patrolPointA;
-                agent.SetDestination(currentPatrolPoint.position);
+                BeginChase();
+            }
+            else if (currentState == AlienState.Chase &&
+                     distance >= loseDistance)
+            {
+                BeginPatrol();
             }
         }
-        else
+
+        switch (currentState)
         {
-            Patrol();
+            case AlienState.Patrol:
+                Patrol();
+                break;
+
+            case AlienState.Chase:
+                Chase();
+                break;
+
+            case AlienState.Flee:
+                Flee();
+                break;
+
+            case AlienState.Hide:
+                UpdateHiding();
+                break;
         }
+
+        UpdateMimicMovement();
     }
 
-    public void Patrol()
+
+
+    private void BeginPatrol()
     {
-        if(agent == null || patrolPointA == null || patrolPointB == null)
-        {
-            return;
-        }
-        
+        currentState = AlienState.Patrol;
+
+        agent.isStopped = false;
         agent.speed = walkSpeed;
+        agent.stoppingDistance = 0.1f;
 
-        if (!agent.pathPending && agent.remainingDistance <= pointDistance)
+        if (currentPatrolPoint == null)
+            currentPatrolPoint = patrolPointA != null
+                ? patrolPointA : patrolPointB;
+
+        if (currentPatrolPoint != null)
+            SetNavDestination(currentPatrolPoint.position);
+        else
+            agent.ResetPath();
+    }
+
+    private void Patrol()
+    {
+        if (patrolPointA == null || patrolPointB == null)
+            return;
+
+        if (!agent.pathPending &&
+            agent.hasPath &&
+            agent.remainingDistance <= pointDistance)
         {
-            if(currentPatrolPoint == patrolPointA)
-            {
-                currentPatrolPoint = patrolPointB;
-            }
-            else
-            {
-                currentPatrolPoint = patrolPointA;
-            }
+            currentPatrolPoint =
+                currentPatrolPoint == patrolPointA
+                ? patrolPointB
+                : patrolPointA;
 
-            agent.SetDestination(currentPatrolPoint.position);
+            SetNavDestination(currentPatrolPoint.position);
         }
     }
 
-    private void ScaredMovement()
+    private void BeginChase()
     {
-        Debug.Log("ScaredMovement running");
+        currentState = AlienState.Chase;
 
-        if (agent == null)
+        agent.isStopped = false;
+        agent.speed = chaseSpeed;
+        agent.stoppingDistance = chaseStopDistance;
+
+        nextChaseUpdate = 0f;
+    }
+
+    private void Chase()
+    {
+        if (Time.time < nextChaseUpdate)
+            return;
+
+        SetNavDestination(player.position);
+
+        nextChaseUpdate =
+            Time.time + chaseUpdateInterval;
+    }
+
+    public void Scared()
+    {
+        if (!isActiveAndEnabled ||
+            agent == null ||
+            !agent.isOnNavMesh ||
+            currentState == AlienState.Flee ||
+            currentState == AlienState.Hide)
         {
-            Debug.LogError("NO NAVMESH AGENT!");
             return;
         }
 
         if (hideSpot == null)
         {
-            Debug.LogError("NO HIDE SPOT!");
-            return;
-        }
-        if (agent == null || hideSpot == null)
-        {
+            Debug.LogWarning("AlienLogic: No hide spot assigned.");
             return;
         }
 
-        agent.speed = scaredSpeed;
-        
-        float distanceToHideSpot = Vector3.Distance(transform.position, hideSpot.position);
-        
-        if(distanceToHideSpot <= 2f)
-        {
-            agent.SetDestination(hideSpot.position);
-
-            if(distanceToHideSpot <= pointDistance)
-            {
-                Hide();
-            }
-
-            return;
-        }
-
-        directionChangeTimer -= Time.deltaTime;
-
-        if(directionChangeTimer <= 0f)
-        {
-            Vector3 directionToHideSpot = (hideSpot.position - transform.position).normalized;
-
-            Vector3 randomDirection = Random.insideUnitSphere * randomOffset;
-
-            randomDirection.y = 0f;
-
-            Vector3 nextPosition = transform.position + directionToHideSpot * 3f + randomDirection;
-
-            NavMeshHit hit;
-
-            if (NavMesh.SamplePosition(nextPosition, out hit, randomOffset, NavMesh.AllAreas))
-            {
-                agent.SetDestination(hit.position);
-            }
-
-            directionChangeTimer = directionChangeInterval;
-        }
-    }
-
-
-    public void Scared()
-    {
-        if (isScared || isHiding)
-        {
-            return;
-        }
-
-        if (alienRenderer != null && newMaterial != null)
-        {
-            alienRenderer.material = newMaterial;
-        }
-
-        isScared = true;
+        currentState = AlienState.Flee;
 
         sDuration = sMaxDuration;
 
-        directionChangeTimer = 0f;
+        if (alienRenderer != null && newMaterial != null)
+            alienRenderer.material = newMaterial;
 
-        if (agent != null)
+        agent.isStopped = false;
+        agent.speed = scaredSpeed;
+        agent.stoppingDistance = 0.1f;
+
+        SetNavDestination(hideSpot.position);
+
+        Debug.Log("Mimic is fleeing!");
+    }
+
+    private void Flee()
+    {
+        DrainAlien(sDrain * Time.deltaTime);
+
+        if (sDuration <= 0f)
         {
-            agent.speed = scaredSpeed;
+            FinishScare();
+            return;
+        }
+        if (!agent.pathPending &&
+            agent.hasPath &&
+            agent.remainingDistance <= pointDistance)
+        {
+            BeginHiding();
         }
     }
 
-    private void Hide()
-    {
-        isHiding = true;
-        isScared = false;
 
+    private void BeginHiding()
+    {
+        currentState = AlienState.Hide;
+
+        agent.isStopped = true;
         agent.ResetPath();
 
         hideTimer = hideDuration;
 
-        Debug.Log("Alien is hiding!");
+        Debug.Log("Mimic is hiding!");
     }
 
-    private void StopHiding()
+    private void UpdateHiding()
     {
-        isHiding = false;
+        hideTimer -= Time.deltaTime;
 
-        if (alienRenderer != null && originalMaterial != null)
+        if (hideTimer <= 0f)
+            FinishScare();
+    }
+
+    private void FinishScare()
+    {
+        if (alienRenderer != null &&
+            originalMaterial != null)
         {
             alienRenderer.material = originalMaterial;
         }
 
-        agent.speed = walkSpeed;
+        sDuration = sMaxDuration;
 
-        currentPatrolPoint = patrolPointA;
+        float distance = HorizontalDistance(
+            agent.transform.position,
+            player.position
+        );
 
-        if (currentPatrolPoint != null)
-        {
-            agent.SetDestination(currentPatrolPoint.position);
-        }
+        if (distance <= chaseDistance)
+            BeginChase();
+        else
+            BeginPatrol();
 
-        Debug.Log("Alien stopped hiding!");
+        Debug.Log("Mimic finished hiding/fleeing!");
     }
 
     public void DrainAlien(float amount)
     {
         sDuration -= amount;
-        sDuration = Mathf.Clamp(sDuration, 0f, sMaxDuration);
+        sDuration = Mathf.Clamp(
+            sDuration, 0f, sMaxDuration
+        );
+    }
+
+    private void SetNavDestination(Vector3 destination)
+    {
+        if (NavMesh.SamplePosition(
+            destination,
+            out NavMeshHit hit,
+            3f,
+            agent.areaMask))
+        {
+            agent.SetDestination(hit.position);
+        }
+    }
+
+    private float HorizontalDistance(Vector3 a, Vector3 b)
+    {
+        a.y = 0f;
+        b.y = 0f;
+        return Vector3.Distance(a, b);
+    }
+
+    private void UpdateMimicMovement()
+    {
+        transform.position =
+            agent.transform.position +
+            Vector3.up * bodyHeight;
+
+        Vector3 velocity = agent.velocity;
+        velocity.y = 0f;
+
+        myMimic.velocity = velocity;
+
+        if (velocity.sqrMagnitude > 0.04f)
+        {
+            Quaternion targetRotation =
+                Quaternion.LookRotation(
+                    velocity,
+                    Vector3.up
+                );
+
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                targetRotation,
+                rotationSpeed * Time.deltaTime
+            );
+        }
     }
 }

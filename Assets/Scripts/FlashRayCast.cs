@@ -1,39 +1,48 @@
+
 using UnityEngine;
 
 public class FlashRayCast : MonoBehaviour
 {
-
     [SerializeField] private Light targetLight;
     [SerializeField] private float rayDistance = 10f;
 
     void Update()
     {
-        if(targetLight == null || !targetLight.enabled)
+        if (targetLight == null || !targetLight.isActiveAndEnabled)
         {
             return;
         }
 
-        Ray ray = new Ray(transform.position, transform.forward);
-        Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
+        Ray ray = new Ray(
+            targetLight.transform.position,
+            targetLight.transform.forward
+        );
+
+        Debug.DrawRay(
+            ray.origin,
+            ray.direction * rayDistance,
+            Color.red
+        );
 
         RaycastHit hitThatThang;
 
-        //AlienLogic aL = new ColliderHit().transform.GetComponent<AlienLogic>;
-
-
-
-        if (Physics.Raycast(ray, out hitThatThang) && targetLight.enabled)
+        if (Physics.Raycast(
+            ray,
+            out hitThatThang,
+            rayDistance,
+            Physics.DefaultRaycastLayers,
+            QueryTriggerInteraction.Collide))
         {
-            AlienLogic alien = hitThatThang.collider.GetComponent<AlienLogic>();
+            AlienLogic alien =
+                hitThatThang.collider.GetComponentInParent<AlienLogic>();
+
+            Debug.Log("Raycast hit: " + hitThatThang.collider.name);
 
             if (alien != null)
             {
+                Debug.Log("Alien detected! Scaring...");
                 alien.Scared();
             }
-
-            //Debug.Log($"Hit {hitThatThang.collider.gameObject.name} at distance {hitThatThang.distance}");
         }
-
-
     }
 }

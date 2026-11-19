@@ -123,9 +123,23 @@ namespace MimicSpace
                     newLegPosition = transform.position + ((newLegPosition - transform.position) + velocity.normalized * (newLegPosition - transform.position).magnitude) / 2f;
 
                 RaycastHit hit;
-                Physics.Raycast(newLegPosition + Vector3.up * 10f, -Vector3.up, out hit);
+                if (!Physics.Raycast(
+                    newLegPosition + Vector3.up * 10f,
+                    Vector3.down,
+                    out hit,
+                    30f,
+                    Physics.DefaultRaycastLayers,
+                    QueryTriggerInteraction.Ignore))
+                {
+                    return;
+                }
                 Vector3 myHit = hit.point;
-                if (Physics.Linecast(transform.position, hit.point, out hit))
+                if (Physics.Linecast(
+                    transform.position,
+                    hit.point,
+                    out hit,
+                    Physics.DefaultRaycastLayers,
+                    QueryTriggerInteraction.Ignore))
                     myHit = hit.point;
 
                 float lifeTime = Random.Range(minLegLifetime, maxLegLifetime);
@@ -143,6 +157,12 @@ namespace MimicSpace
         // object pooling to limit leg instantiation
         void RequestLeg(Vector3 footPosition, int legResolution, float maxLegDistance, float growCoef, Mimic myMimic, float lifeTime)
         {
+            if (legPrefab == null)
+            {
+                Debug.LogError("Mimic: No leg prefab assigned!");
+                return;
+            }
+
             GameObject newLeg;
             if (availableLegPool.Count > 0)
             {
